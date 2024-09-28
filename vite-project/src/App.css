@@ -1,0 +1,109 @@
+
+
+#root {
+  max-width: 100%; /* Allow full width */
+  margin: 0; /* Remove margin */
+  padding: 2rem;
+  text-align: center;
+  background-color: #232324; /* Light background for a soothing effect */
+  height: 100vh;
+}
+
+.create-box {
+  position :sticky;
+  top : 0;
+  align-items: center;
+  justify-content: space-between;
+  z-index : 2;
+  background-color :#232324;;
+  
+}
+
+.create {
+  height: 100px;
+  width: 100%;
+  background-color: #8af2f9; /* Soft gray for the create box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position : sticky;
+}
+
+input {
+  height: 50px;
+  width: 200px;
+  background-color: #ffffff; /* White for input */
+  color: #2c3e50; /* Dark text for readability */
+  margin-left: 20px;
+  border-radius: 20px;
+  text-align: center;
+  border: none; /* Remove border for a cleaner look */
+}
+
+input::placeholder {
+  color: #7f8c8d; /* Placeholder color */
+}
+
+button {
+  margin-left: 20px;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: none; /* Remove border */
+  background-color: #4cd137; /* Softer green button */
+  color: white;
+  cursor: pointer;
+  transition: background-color .3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #5fca7a; /* Lighter green on hover */
+}
+
+/* Adjusted display class for scrolling list items */
+.display {
+  display: flex;
+  flex-direction: column;
+  height: calc(80vh - 50px); /* Ensure this value is appropriate */
+  width: calc(100% - 40px); /* Full width minus padding */
+  overflow-y: auto; /* Enable vertical scrolling for list items */
+  margin-top: 50px; 
+  padding-right: 10px; /* Optional padding */
+}
+
+.list-item {
+    background-color: rgba(255,255,255,0.9); /* Light background for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px; /* Space between list items */
+    display: flex;
+    justify-content: space-between; /* Space between details and button */
+    align-items: center; /* Center vertically */
+}
+
+.task-details {
+    flex-grow:1; /* Allow details to take available space */
+    color:#2c3e50; /* Dark text for better visibility */
+}
+
+.description,
+.due-date {
+    margin:5px0; /* Space between description and due date */
+    color:#7f8c8d; /* Slightly lighter text for descriptions */
+}
+
+.delete-button {
+    background-color:#e84118; /* Softer red button for delete action */
+    color:white;
+    border-radius:50%;
+    height:40px; 
+    width:40px;
+    border:none; 
+    cursor:pointer; 
+    transition:.3s ease; /* Smooth transition on hover */
+}
+
+.delete-button:hover {
+    background-color:#c23616; /* Darker red on hover */
+}
+
